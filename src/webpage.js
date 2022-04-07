@@ -1,6 +1,7 @@
 export {pageStartup};
 import { createHomeTab } from "./home";
 import { createMenuTab } from "./menu";
+import { createContactTab } from "./contact";
 const pageStartup = () => {
   const mainContainer = document.getElementById("content");
 
@@ -37,9 +38,10 @@ const pageStartup = () => {
     mainContainer.appendChild(header);
     
 
-
   createHomeTab();
   createMenuTab();
+  createContactTab();
+  
 
   // Main container styling
   mainContainer.style.display = "grid";

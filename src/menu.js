@@ -16,7 +16,7 @@ const createMenuTab = () => {
     const imgKaneliPulla = document.createElement("img");
     imgKaneliPulla.src = "/pictures/kanelipulla.jpg";
     const txtKaneliPulla = document.createElement("p");
-    txtKaneliPulla.textContent = "Traditional Finnish cinnamon bun";
+    txtKaneliPulla.textContent = "Kanelipulla";
     kaneliPulla.appendChild(imgKaneliPulla);
     kaneliPulla.appendChild(txtKaneliPulla);
 
@@ -25,7 +25,7 @@ const createMenuTab = () => {
     const imgVoiSilmaPulla = document.createElement("img");
     imgVoiSilmaPulla.src = "/pictures/voipulla.jpg";
     const txtVoisilmapulla = document.createElement("p");
-    txtVoisilmapulla.textContent = "Traditional Finnish bun with butter in center";
+    txtVoisilmapulla.textContent = "Voisilmäpulla";
     voiSilmaPulla.appendChild(imgVoiSilmaPulla);
     voiSilmaPulla.appendChild(txtVoisilmapulla);
 
@@ -33,7 +33,7 @@ const createMenuTab = () => {
     const imgKorvaPuusti = document.createElement("img");
     imgKorvaPuusti.src = "/pictures/korvapuusti.jpg";
     const txtKorvapuusti = document.createElement("p");
-    txtKorvapuusti.textContent = "Cinnamon bun";
+    txtKorvapuusti.textContent = "Korvapuusti";
     korvapuusti.appendChild(imgKorvaPuusti);
     korvapuusti.appendChild(txtKorvapuusti);
 
@@ -41,7 +41,7 @@ const createMenuTab = () => {
     const imgKarjalanPiirakka = document.createElement("img");
     imgKarjalanPiirakka.src = "/pictures/karjalanpiirakka11.jpg";
     const txtKarjalanpiirakka = document.createElement("p");
-    txtKarjalanpiirakka.textContent = "Traditional Finnish rice pie";
+    txtKarjalanpiirakka.textContent = "Karjalanpiirakka";
     karjalanPiirakka.appendChild(imgKarjalanPiirakka);
     karjalanPiirakka.appendChild(txtKarjalanpiirakka);
 

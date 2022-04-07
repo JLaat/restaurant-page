@@ -5,27 +5,19 @@
     color: antiquewhite;
 }
 
-body {
-    
-}
-
-#content {
-    
-}
-
-
 /* Main */
 .tab {
     height: 100vh;
     padding-top: 1rem;
-    max-width: 70vw;
+    min-width: 35vw;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
     justify-self: center;
+    align-items: center;
 }
 
 #Home {
-    display: none;
+    align-items: flex-start;
 }
 
 p {
