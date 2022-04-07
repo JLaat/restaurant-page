@@ -1,5 +1,6 @@
 export {pageStartup};
 import { createHomeTab } from "./home";
+import { createMenuTab } from "./menu";
 const pageStartup = () => {
   const mainContainer = document.getElementById("content");
 
@@ -11,15 +12,21 @@ const pageStartup = () => {
   companyName.textContent = "Pulla Boys";
     // Create tab buttons 
     const tabContainer = document.createElement("div");
+    tabContainer.className = "tabContainer";
     tabContainer.style.display = "flex";
     tabContainer.style.justifyContent = "center";
 
     const btnHome = document.createElement("button");
     btnHome.textContent = "Home";
+    btnHome.className = "button";
+
     const btnMenu = document.createElement("button");
     btnMenu.textContent = "Menu";
+    btnMenu.className = "button";
+
     const btnContact = document.createElement("button");
     btnContact.textContent = "Contact";
+    btnContact.className = "button";
 
     tabContainer.appendChild(btnHome);
     tabContainer.appendChild(btnMenu);
@@ -32,6 +39,7 @@ const pageStartup = () => {
 
 
   createHomeTab();
+  createMenuTab();
 
   // Main container styling
   mainContainer.style.display = "grid";
