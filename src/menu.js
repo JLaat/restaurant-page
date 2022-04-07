@@ -6,9 +6,7 @@ const createMenuTab = () => {
     const menuTab = document.createElement('div');
     menuTab.id = "Menu";
     menuTab.className = "tab";
-
-    menuTab.style.display = "grid";
-    menuTab.style.gridTemplateColumns = "repeat(2, 1fr)";
+    
     menuTab.style.gridTemplateRows = "repeat(4, 1fr)";
 
     // Menu items

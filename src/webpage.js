@@ -3,7 +3,7 @@ import { createHomeTab } from "./home";
 import { createMenuTab } from "./menu";
 import { createContactTab } from "./contact";
 const pageStartup = () => {
-  const mainContainer = document.getElementById("content");
+  const headerContainer = document.getElementById("header");
 
   // Create header for page
   const header = document.createElement("div");
@@ -35,7 +35,7 @@ const pageStartup = () => {
 
     header.appendChild(companyName);
     header.appendChild(tabContainer);
-    mainContainer.appendChild(header);
+    headerContainer.appendChild(header);
     
 
   createHomeTab();
@@ -44,9 +44,9 @@ const pageStartup = () => {
   
 
   // Main container styling
-  mainContainer.style.display = "grid";
-  mainContainer.style.textAlign = "center";
-  mainContainer.style.justifyContent = "center";
+  headerContainer.style.display = "grid";
+  headerContainer.style.textAlign = "center";
+  headerContainer.style.justifyContent = "center";
 }
 
 
