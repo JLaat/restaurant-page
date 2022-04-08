@@ -6,16 +6,10 @@ const pageStartup = () => {
   const headerContainer = document.getElementById("header");
 
   // Create header for page
-  const header = document.createElement("div");
-  header.className = "header";
-
-  const companyName = document.createElement("h1");
-  companyName.textContent = "Pulla Boys";
+  
     // Create tab buttons 
     const tabContainer = document.createElement("div");
     tabContainer.className = "tabContainer";
-    tabContainer.style.display = "flex";
-    tabContainer.style.justifyContent = "center";
 
     const btnHome = document.createElement("button");
     btnHome.textContent = "Home";
@@ -33,9 +27,7 @@ const pageStartup = () => {
     tabContainer.appendChild(btnMenu);
     tabContainer.appendChild(btnContact);
 
-    header.appendChild(companyName);
-    header.appendChild(tabContainer);
-    headerContainer.appendChild(header);
+    headerContainer.appendChild(tabContainer);
     
 
   createHomeTab();
@@ -46,7 +38,8 @@ const pageStartup = () => {
   // Main container styling
   headerContainer.style.display = "grid";
   headerContainer.style.textAlign = "center";
-  headerContainer.style.justifyContent = "center";
+  headerContainer.style.justifyContent = "flex-end";
+
 }
 
 

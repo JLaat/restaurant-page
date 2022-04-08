@@ -7,9 +7,8 @@ const contactTab = document.createElement("div");
 contactTab.id = "Contact";
 contactTab.className = "tab";
 
-
 contactTab.style.gridTemplateColumns = "1fr";
-contactTab.style.gridTemplateRows = "repeat(3, 1fr)";
+contactTab.style.gridTemplateRows = "repeat(2, 1fr) 0.2fr";
 
 // Address section
 const addressContainer = document.createElement("div");

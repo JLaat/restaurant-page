@@ -13,11 +13,19 @@ const changeActiveTab = (tabId) => {
     document.getElementById(tabId).style.display = "grid";
 }
 
+const setButtonBorders = () => {
+    
+}
+
 
 // Set event listeners
 const tabButtons = document.getElementsByClassName("button");
 for(let i = 0; i < tabButtons.length; i++) {
     tabButtons[i].addEventListener("click", () => {
         changeActiveTab(tabButtons[i].textContent);
+        for(let j = 0; j < 3; j++) {
+            
+        }
+        tabButtons[i].style.borderBottom = "solid white";
     })
 }
