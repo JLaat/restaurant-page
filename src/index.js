@@ -13,8 +13,15 @@ const changeActiveTab = (tabId) => {
     document.getElementById(tabId).style.display = "grid";
 }
 
-const setButtonBorders = () => {
-    
+const resetButtonBorders = () => {
+    const tabButtons = document.getElementsByClassName("button");
+    for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].style.borderBottom = "solid rgba(0, 0, 0, 0)";
+    }
+}
+
+const setButtonActive = (button) => {
+    button.style.borderBottom = "solid white";
 }
 
 
@@ -23,6 +30,7 @@ const tabButtons = document.getElementsByClassName("button");
 for(let i = 0; i < tabButtons.length; i++) {
     tabButtons[i].addEventListener("click", () => {
         changeActiveTab(tabButtons[i].textContent);
-       
+       resetButtonBorders();
+       setButtonActive(tabButtons[i]);
     })
 }
