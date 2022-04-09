@@ -2,19 +2,21 @@
     border: none;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: antiquewhite;
     text-align: center;
+    color: antiquewhite;
 }
 html {
     height: 100%;
 }
+@font-face {
+    font-family: pullapojatFont;
+    src: url(/src/fonts/BeauRivage-Regular.ttf);
+}
 body {
-    background-image: url("/pictures/cinnamon.jpg");
-    background-size: 30%;
     min-height: 100%;
-
     display: grid;
-    grid-template-rows: 1fr 4fr 0.5fr;
+    grid-template-rows: 0.6fr 4fr 0.5fr;
+    background-image: url(/pictures/wallpaperflare.com_wallpaper.jpg);
     
 }
 #content {
@@ -26,9 +28,15 @@ body {
 
 /* All tabs*/
 .tab {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
     display: none;
     justify-content: center;
     flex: 3 1 auto;
+    max-width: 40%;
+    border-radius: 1rem;  
+    border: thick solid antiquewhite;
+
 }
 
 img {
@@ -37,11 +45,10 @@ img {
 
 /* Header */
 header {
-    background-color: rgba(0, 0, 0, 0.9);  
+    background-color: rgba(0, 0, 0, 0.9 );
     justify-content: center;
     align-items: flex-end;
     grid-template-columns: 1fr;
-    border-bottom: thick solid burlywood;
 
 }
 button {
@@ -53,17 +60,33 @@ button:hover {
     position: relative;
     bottom: 0.5rem;
     transition: bottom 1s;
+    border-bottom: solid white;
 }
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.9);
     font-size: 2rem;
-    border-top: thick solid burlywood;
-
+    background-color: rgba(0, 0, 0, 0.9 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#Home  h1 {
+    font-family: pullapojatFont;
+    font-size: 7rem;
+}
 
+.restaurantCategory {
+    position: absolute;
+    left: 44%;
+    top: 53%;
+    font-size: 2rem;
+}
+.restaurantDescription {
+    padding-top: 1rem;
+    border-top: thick solid antiquewhite;
+}
 
 
 
