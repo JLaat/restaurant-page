@@ -14,6 +14,7 @@ const pageStartup = () => {
     const btnHome = document.createElement("button");
     btnHome.textContent = "Home";
     btnHome.className = "button";
+    btnHome.style.borderBottom = "solid white";
 
     const btnMenu = document.createElement("button");
     btnMenu.textContent = "Menu";

@@ -11,36 +11,36 @@ const createMenuTab = () => {
 
     // Menu items
     const kaneliPulla = document.createElement("div");
-    const imgKaneliPulla = document.createElement("img");
-    imgKaneliPulla.src = "/pictures/kanelipulla.jpg";
-    const txtKaneliPulla = document.createElement("p");
-    txtKaneliPulla.textContent = "Kanelipulla";
-    kaneliPulla.appendChild(imgKaneliPulla);
+    const headerKaneliPulla = document.createElement("h2");
+    headerKaneliPulla.textContent = "Kanelipulla";
+    const txtKaneliPulla = document.createElement("h3");
+    txtKaneliPulla.textContent = "$3";
+    kaneliPulla.appendChild(headerKaneliPulla);
     kaneliPulla.appendChild(txtKaneliPulla);
 
 
     const voiSilmaPulla = document.createElement("div");
-    const imgVoiSilmaPulla = document.createElement("img");
-    imgVoiSilmaPulla.src = "/pictures/voipulla.jpg";
-    const txtVoisilmapulla = document.createElement("p");
-    txtVoisilmapulla.textContent = "Voisilmäpulla";
-    voiSilmaPulla.appendChild(imgVoiSilmaPulla);
+    const headerVoisilmapulla = document.createElement("h2");
+    headerVoisilmapulla.textContent = "Voisilmäpulla";
+    const txtVoisilmapulla = document.createElement("h3");
+    txtVoisilmapulla.textContent = "$3.5";
+    voiSilmaPulla.appendChild(headerVoisilmapulla);
     voiSilmaPulla.appendChild(txtVoisilmapulla);
 
     const korvapuusti = document.createElement("div");
-    const imgKorvaPuusti = document.createElement("img");
-    imgKorvaPuusti.src = "/pictures/korvapuusti.jpg";
-    const txtKorvapuusti = document.createElement("p");
-    txtKorvapuusti.textContent = "Korvapuusti";
-    korvapuusti.appendChild(imgKorvaPuusti);
+    const headerKorvapuusti = document.createElement("h2");
+    headerKorvapuusti.textContent = "Korvapuusti";
+    const txtKorvapuusti = document.createElement("h3");
+    txtKorvapuusti.textContent = "$3.5";
+    korvapuusti.appendChild(headerKorvapuusti);
     korvapuusti.appendChild(txtKorvapuusti);
 
     const karjalanPiirakka = document.createElement("div");
-    const imgKarjalanPiirakka = document.createElement("img");
-    imgKarjalanPiirakka.src = "/pictures/karjalanpiirakka11.jpg";
-    const txtKarjalanpiirakka = document.createElement("p");
-    txtKarjalanpiirakka.textContent = "Karjalanpiirakka";
-    karjalanPiirakka.appendChild(imgKarjalanPiirakka);
+    const headerKarjalanpiirakka = document.createElement("h2");
+    headerKarjalanpiirakka.textContent = "Karjalanpiirakka";
+    const txtKarjalanpiirakka = document.createElement("h3");
+    txtKarjalanpiirakka.textContent = "$2.5";
+    karjalanPiirakka.appendChild(headerKarjalanpiirakka);
     karjalanPiirakka.appendChild(txtKarjalanpiirakka);
 
 
