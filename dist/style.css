@@ -98,6 +98,7 @@ footer {
 #Home  h1 {
     font-family: pullapojatFont;
     font-size: 3.5em;
+    color: goldenrod;
 }
 .restaurantDescription {
     padding-top: 1em;

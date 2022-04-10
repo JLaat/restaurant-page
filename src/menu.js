@@ -6,7 +6,6 @@ const createMenuTab = () => {
     const menuTab = document.createElement('div');
     menuTab.id = "Menu";
     menuTab.className = "tab";
-    
     menuTab.style.gridTemplateRows = "repeat(4, 1fr)";
 
     // Menu items
@@ -44,6 +43,7 @@ const createMenuTab = () => {
     karjalanPiirakka.appendChild(txtKarjalanpiirakka);
 
 
+    // Append into DOM
     menuTab.appendChild(kaneliPulla);
     menuTab.appendChild(voiSilmaPulla);
     menuTab.appendChild(korvapuusti);
